@@ -1,0 +1,47 @@
+<div class="course">
+    <h1 class="title">Các khoá học</h1>
+    <div class="subjects">
+        <div class="subject" ng-repeat="subject in subjects">
+            <img src="../assets/images/logos/{{subject.Logo}}" alt="">
+            <span>{{subject.Name}}</span>
+        </div>        
+    </div>
+</div>
+
+<style>
+    .course{
+        padding: 3rem 2rem;
+    }
+    .course h1{
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 3rem;
+    }
+    .subjects {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 100px
+    }
+    .subject{
+        padding: 3rem;   
+    }
+    .subject img{
+        max-width: 100%;
+        margin: auto;
+        border-radius: 2rem;
+    }
+    .subject span{
+        display: block;
+        margin: 3rem 0;
+        text-align: center;
+        font-weight: 600;
+    }
+    .slick-slide {
+        margin: 10px
+    }
+
+    .slick-slide img {
+        width: 100%;
+        border: 0px solid #fff
+    }
+</style>

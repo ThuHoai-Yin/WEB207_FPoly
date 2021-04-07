@@ -1,0 +1,59 @@
+<div class="login">
+
+    <h2 class="title">Mời bạn đăng nhập</h2>
+    <form autocomplete="off">
+        <input type="text" name="login" id="username" placeholder="username">
+        <input type="text" name="login" id="password" placeholder="password">
+        <input type="submit" value="Đăng Nhập">
+    </form>
+    <div class="wrapper">
+        <a href="#/signup">Chưa có tài khoản?</a>
+        <a href="#/forgotpass">Quên mật khẩu?</a>
+    </div>
+    
+<style>
+.login .wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+.login .title{
+    font-size: 3rem;    
+    text-align: center;
+    margin: 2rem 0;
+}   
+.login{  
+    padding: 3rem 5rem;      
+    max-width: 50rem;
+    margin: auto;
+    box-shadow: 0 0 5rem -3rem;
+    margin-top: 7rem;
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+}
+.login form input{
+    margin: 1rem 0;
+    padding: 1rem;
+    text-align: center;
+    border: none;
+    background-color: #eee5e5;
+    border-bottom: 1px solid #2d9fe000;
+    transition: .5s;
+}
+.login form input:focus{
+    background: transparent;
+    border-bottom: 1px solid #2d9fe0;
+    color: #fff;
+}
+
+.login form input[type="submit"]{
+    background-color: #2d9fe0;
+    width: 50%;
+    margin: 3rem auto 0 auto;
+    border-radius: 999rem;
+    color: #ece3e3;
+}
+
+</style>
